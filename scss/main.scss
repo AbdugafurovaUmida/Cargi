@@ -1,0 +1,300 @@
+@import url(fonts.css);
+@import url(style.css);
+*{
+    box-sizing: border-box;
+}
+body{
+    font-family: 'MuseoSansCyrl';
+    font-weight: 300;
+}
+.container{
+    max-width: 1534px;
+    margin: 0 auto;
+}
+.top-header{
+    background-color: #080808;
+    padding: 5px 0;
+}
+.social__link{
+    text-decoration: none; 
+    width: 29px;
+    height: 29px;
+    border-radius: 50%;
+    background-color: rgba(246, 34, 33, 0.25);
+}
+.social__link:hover{
+    background-color:  #F62221;
+}
+.social_icons{
+    padding:7px;
+    font-size: 14px;
+    color: #fff;
+}
+.top-header__info{
+    display: inline-block;
+    font-size: 14px;
+    line-height: 100%;
+    color: #7B7B7B;
+}
+.top-header__info:not(:first-child){
+    margin-left: 26px;
+}
+.top-header-dot{
+    width: 5px;
+    height: 5px;
+    background: #F62221;
+    opacity: 0.5;
+    display: inline-block;
+    border-radius: 50%;
+    margin: 0 5px;
+}
+.top-header__link{
+    font-size: 14px;
+    line-height: 100%;
+    color: #7B7B7B;
+}
+.top-header__info_icons{
+    font-size: 14px;
+    padding: 9px;
+    border-radius: 50%;
+    color: rgba(255, 255, 255, 0.7);
+    background-color: rgba(39, 39, 39, 1);
+    margin-right: 10px;
+}
+.top-header__link{
+    text-decoration: none;
+}
+// Intro 
+.intro{
+    background-image: url(../img/home-intro-bg.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    padding: 30px 0 344px;
+}
+.menu{
+    display: flex;
+    align-items: center;
+}
+.menu__link{
+    font-weight: 500;
+    font-size: 16px;
+    color: #FFFFFF;
+    text-decoration: none;
+    margin-right: 25px;
+}
+.menu__link:hover{
+    color: #ffffff;
+}
+.menu__link:not(:first-child){
+    margin-left: 25px;
+}
+.menu__link_icons{
+    font-size: 6px;
+    color: #FFFFFF;
+}
+.intro-header-dot{
+    width: 5px;
+    height: 5px;
+    background: #F62221;
+    opacity: 0.5;
+    display: inline-block;
+    border-radius: 50%;
+}
+.menu__button{
+    border: none;
+    background: transparent;
+    font-weight: bold;
+    font-size: 18px;
+    color: #FFFFFF;
+    padding: 0;
+    margin-left: 25px;
+    position: relative;
+    transition: hover 5ms linear ;
+}
+.menu__button:hover:before{
+    transform: scaleX(1);
+    width: 100%;
+}
+.menu__button:before{
+    content: ' ';
+    width: 50% ;
+    height: 5px;
+    position: absolute;
+    bottom: -10px;
+    right: 0;
+    background: #F62221;
+    border: 2px solid #F62221;
+    box-shadow: 0px 16px 24px rgba(246, 34, 33, 0.2), 0px 2px 6px rgba(246, 34, 33, 0.12), 0px 0px 1px rgba(0, 0, 0, 0.04);
+    border-radius: 55px;
+    transform: scaleX(0);
+    transform: translateX(1%);
+    transition: transform 3s ease-in;
+}
+.intro__content{
+    margin-top: 180px;
+}
+.intro-content-dot{
+    width: 7px;
+    height: 7px;
+    background: #F62221;
+    display: inline-block;
+    border-radius: 50%;
+}
+.intro-content-dash{
+    width: 105px;
+    height: 1px;
+    border: 1px solid dashed #fff ;
+    display: inline-block;
+    color: #F62221;
+}
+.intro-type{
+    width: 592px;
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+}
+.intro-type__tuning{
+    font-size: 16px;
+    color: #BABABD;
+}
+.intro-type__studio{
+    font-weight: bold;
+    font-size: 18px;
+    color: #FFFFFF;
+    padding: 9px 18px 7px;
+    background: #7B1312;
+    box-shadow: 0px 0px 30px rgba(251, 163, 66, 0.05);
+    border-radius: 0px 15px;
+    margin-left: 15px;
+}
+.intro__title{
+    max-width: 595px;
+    font-weight: bold;
+    font-size: 96px;
+    line-height: 75px;
+    color: #FFFFFF;
+    margin-bottom: 34px;
+    margin-top: 20px;
+}
+.intro__text{
+    max-width: 579px;
+    font-size: 16px;
+    line-height: 25px; 
+    color: #BABABD;
+    margin-top: 25px;
+    margin-bottom: 50px;
+}
+.intro__button{
+    font-weight: bold;
+    font-size: 18px;
+    letter-spacing: 0.05em;
+    
+    padding: 16px 40px 17px;
+    text-decoration: none;
+    margin-right: 33px;
+}
+.intro__button{
+    border: 2px solid #F62221;
+    filter: drop-shadow(0px 16px 24px rgba(246, 34, 33, 0.2)), drop-shadow(0px 2px 6px rgba(246, 34, 33, 0.12)), drop-shadow(0px 0px 1px rgba(0, 0, 0, 0.04));
+    border-radius: 55px;
+    background-color: transparent;
+    color: #FFFFFF;
+}
+.intro__button:hover{
+    background: #F62221;
+    box-shadow: 0px 16px 24px rgba(246, 34, 33, 0.2), 0px 2px 6px rgba(246, 34, 33, 0.12), 0px 0px 1px rgba(0, 0, 0, 0.04);
+    border-radius: 55px;
+    color: #FFFFFF;
+}
+// Catalog
+.catalog{
+    padding: 80px 0 50px;
+}
+.page__title{
+    font-weight: bold;
+    font-size: 64px;
+    color: #080808;
+    position: relative;
+}
+.page-type{
+    display: flex;
+    align-items: center;
+    margin-bottom: 100px;
+}
+.page__title::before{
+    content: ' ';
+    width: 100px;
+    height: 5px; 
+    position: absolute;
+    left: 0;
+    bottom: -50px;
+    background: #F62221;
+    border-radius: 55px;
+    transition: transform 3s linear;
+}
+.page__title:hover:before{
+    transform: scaleX(1);
+    width: 100%;
+}
+.page-title-dot{
+    width: 33px;
+    height: 10px;
+    background: #F62221;
+    box-shadow: 0px 0px 30px rgba(251, 163, 66, 0.05);
+    border-radius: 0px 15px;
+    transform: rotate(-90deg);
+    display: inline-block;
+    margin-left: 15px;
+}
+// cards
+.cards{
+    position: relative;
+    margin-bottom: 30px;
+}
+.cards:before {
+    content :' ';
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background: linear-gradient(180deg, rgba(8, 8, 8, 0) 0%, rgba(8, 8, 8, 0.8) 100%);
+    border-radius: 0px 0px 7px 7px;
+}
+.cards__content{
+    position: absolute;
+    top: 42px;
+    left: 50px;
+}
+.cards__content_type{
+    position: absolute;
+    bottom: 46px;
+    right: 50px;
+    font-weight: bold;
+    font-size: 24px;
+    color: #FFFFFF;
+}
+.cards__text{
+    font-weight: 500;
+    font-size: 18px;
+    color: #FFFFFF;
+}
+.cards__text_price{
+    color: #e9201d;
+}
+.page__icon{
+    color: #F62221;
+    font-size: 14px;
+    margin-left: 6px;
+}
+.page__text{
+    font-weight: 500;
+    font-size: 16px;
+    color: #080808;
+    text-align: end;
+}
+
+
+
+
