@@ -7,8 +7,11 @@ body{
     font-family: 'MuseoSansCyrl';
     font-weight: 300;
 }
+a{
+    text-decoration: none;
+}
 .container{
-    max-width: 1534px;
+    max-width: 1400px;
     margin: 0 auto;
 }
 .top-header{
@@ -21,12 +24,15 @@ body{
     height: 29px;
     border-radius: 50%;
     background-color: rgba(246, 34, 33, 0.25);
+    display: inline-block;
+    text-align: center;
 }
 .social__link:hover{
     background-color:  #F62221;
 }
 .social_icons{
-    padding:7px;
+    padding-top: 7px;
+    // padding:7px; line-height: 31px;
     font-size: 14px;
     color: #fff;
 }
@@ -129,7 +135,7 @@ body{
     border-radius: 55px;
     transform: scaleX(0);
     transform: translateX(1%);
-    transition: transform 3s ease-in;
+    transition: all 0.5s ease-in;
 }
 .intro__content{
     margin-top: 180px;
@@ -189,10 +195,10 @@ body{
     font-weight: bold;
     font-size: 18px;
     letter-spacing: 0.05em;
-    
     padding: 16px 40px 17px;
     text-decoration: none;
     margin-right: 33px;
+    transition: 2s ease-in-out;
 }
 .intro__button{
     border: 2px solid #F62221;

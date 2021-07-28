@@ -10,8 +10,12 @@ body {
   font-weight: 300;
 }
 
+a {
+  text-decoration: none;
+}
+
 .container {
-  max-width: 1534px;
+  max-width: 1400px;
   margin: 0 auto;
 }
 
@@ -26,6 +30,8 @@ body {
   height: 29px;
   border-radius: 50%;
   background-color: rgba(246, 34, 33, 0.25);
+  display: inline-block;
+  text-align: center;
 }
 
 .social__link:hover {
@@ -33,7 +39,7 @@ body {
 }
 
 .social_icons {
-  padding: 7px;
+  padding-top: 7px;
   font-size: 14px;
   color: #fff;
 }
@@ -160,10 +166,8 @@ body {
           transform: scaleX(0);
   -webkit-transform: translateX(1%);
           transform: translateX(1%);
-  -webkit-transition: -webkit-transform 3s ease-in;
-  transition: -webkit-transform 3s ease-in;
-  transition: transform 3s ease-in;
-  transition: transform 3s ease-in, -webkit-transform 3s ease-in;
+  -webkit-transition: all 0.5s ease-in;
+  transition: all 0.5s ease-in;
 }
 
 .intro__content {
@@ -242,6 +246,8 @@ body {
   padding: 16px 40px 17px;
   text-decoration: none;
   margin-right: 33px;
+  -webkit-transition: 2s ease-in-out;
+  transition: 2s ease-in-out;
 }
 
 .intro__button {
