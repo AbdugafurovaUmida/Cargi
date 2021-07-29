@@ -406,6 +406,21 @@ a:hover {
   display: block;
 }
 
+.catalog {
+  position: relative;
+}
+.catalog::before {
+  content: " ";
+  position: absolute;
+  width: 650px;
+  height: 200px;
+  background-size: cover;
+  background-image: url(../img/cargibg-logo.svg);
+  background-repeat: no-repeat;
+  right: 20px;
+  top: 70px;
+}
+
 .class-card {
   position: relative;
 }
